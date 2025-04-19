@@ -45,7 +45,7 @@ export const categories = [
   {
     id: 6,
     img: burritoImg,
-    categoryName: "burritoImg",
+    categoryName: "burrito",
   },
 ];
 
