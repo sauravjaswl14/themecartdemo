@@ -6,10 +6,18 @@ import paintIcon from "../../assets/icons/paint.png";
 import circlesIcon from "../../assets/icons/three-circle.png";
 import triangleCircleIcon from "../../assets/icons/triangle-circle.png";
 
-export default function SideBar() {
+export default function SideBar({ isOpen }) {
+  let cssClasses;
+  if (!isOpen) {
+    cssClasses =
+      "hidden w-20 pt-6 h-full bg-white border-r-2 border-gray-200 lg:flex flex-col gap-y-12 items-center";
+  } else {
+    cssClasses =
+      "w-20 pt-6 h-full bg-white border-r-2 border-gray-200 flex flex-col gap-y-12 items-center";
+  }
   return (
-    <aside className="w-20 pt-6 h-full bg-white border-r-2 border-gray-200 flex flex-col gap-y-12 items-center">
-      <img src={logo} className="w-10" alt="logo" />
+    <aside className={cssClasses}>
+      <img src={logo} className="w-6 lg:w-10" alt="logo" />
       <div className="flex flex-col gap-y-10 items-center">
         <img src={homeIcon} className="w-5" alt="home" />
         <div className="w-10 h-10 flex justify-center items-center rounded-md bg-gray-200">
