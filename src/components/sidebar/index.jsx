@@ -12,7 +12,9 @@ export default function SideBar() {
       <img src={logo} className="w-10" alt="logo" />
       <div className="flex flex-col gap-y-10 items-center">
         <img src={homeIcon} className="w-5" alt="home" />
-        <img src={giftIcon} className="w-5" alt="gift" />
+        <div className="w-10 h-10 flex justify-center items-center rounded-md bg-gray-200">
+          <img src={giftIcon} className="w-5 rounded-md" alt="gift" />
+        </div>
         <img src={windowIcon} className="w-5" alt="window" />
         <img src={paintIcon} className="w-5" alt="paint" />
         <img src={circlesIcon} className="w-5" alt="circles" />

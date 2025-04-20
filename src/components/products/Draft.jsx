@@ -29,7 +29,7 @@ export default function Draft() {
                       alt={item.title}
                       className="w-full h-full rounded-full"
                     />
-                    <div className="absolute top-0 w-5 h-5 rounded-full flex justify-center items-center bg-gray-200 font-bold">
+                    <div className="absolute top-0 right-0 w-5 h-5 rounded-full flex justify-center items-center bg-gray-200 font-bold">
                       2
                     </div>
                   </div>

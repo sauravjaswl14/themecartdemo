@@ -7,7 +7,7 @@ export default function Categories() {
     <main className="lg:w-[70%]">
       {/*  */}
       <div className="w-full flex justify-between">
-        <h1 className="text-stone-600 font-semibold">Categories</h1>
+        <h1 className="text-stone-600 text-xl font-semibold">Categories</h1>
         <div className="flex gap-x-2 items-center">
           <ChevronLeft />
           <ChevronRight />
@@ -23,7 +23,9 @@ export default function Categories() {
               className="w-32 h-42 bg-white rounded-md p-5 flex flex-col gap-y-5 justify-center items-center"
             >
               <img src={item.img} alt={item.categoryName} />
-              <p className="capitalize">{item.categoryName}</p>
+              <p className="capitalize text-stone-600 font-bold">
+                {item.categoryName}
+              </p>
             </div>
           );
         })}
@@ -34,7 +36,7 @@ export default function Categories() {
         {foodItems.map((item) => {
           return (
             <div key={item.id} className="p-3 w-full bg-white rounded-md">
-              <div className="flex flex-col gap-y-5">
+              <div className="w-full flex flex-col gap-y-5">
                 <div className="w-full h-[200px]">
                   <img
                     src={item.img}
